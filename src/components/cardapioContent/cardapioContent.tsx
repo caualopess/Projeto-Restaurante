@@ -228,7 +228,7 @@ export function CardapioContent() {
         )
     }
 
-    else if (navOption == 'sobremesas') {
+    else {
         return (
             <div className={styles.contentDiv}>
                 {sobremesas.map(sobremesa => {
