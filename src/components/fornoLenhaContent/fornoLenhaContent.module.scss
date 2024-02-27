@@ -1,0 +1,113 @@
+.fornoLenhaContentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.80);
+
+    width: 600px;
+    height: calc(100% - 24vh);
+    padding: 12vh 0;
+    gap: 5rem;
+
+    div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            font-family: 'Bebas Neue', 'Montserrat';
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            width: 273px;
+        }
+    }
+
+    p {
+        width: 70%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: 'Libre Baskerville', 'dayrom', serif;
+        color: white;
+        font-style: italic;
+        line-height: 1.7rem;
+        letter-spacing: 0.04rem;
+    }
+
+    button {
+        cursor: pointer;
+
+        background-color: #bc3c3b;
+
+        padding: 0.7rem 1.3rem;
+        border: 2px solid white;
+        box-shadow: 0 0 0 3px #bc3c3b;
+
+        a {
+            text-decoration: none;
+
+            font-size: 1.1rem;
+            letter-spacing: 0.07rem;
+
+            color: white;
+            font-weight: 300;
+            font-family: 'dayrom';
+        }
+
+        &:hover {
+            transition: all 0.2s;
+            filter: brightness(0.9);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .fornoLenhaContentDiv {
+        div {
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            img {
+                width: 225px;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        button {
+            padding: 0.5rem 0.7rem;
+
+            a {
+                font-size: 0.8rem;
+                letter-spacing: 0.07rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .fornoLenhaContentDiv {
+        div {
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

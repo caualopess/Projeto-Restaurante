@@ -1,0 +1,82 @@
+.headerCardapio {
+    height: 6vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.61);
+
+    nav {
+        img {
+            width: 30px;
+            height: 30px;
+
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+
+            li {
+                cursor: pointer;
+                list-style: square;
+                color: #bc3c3b;
+
+                span {
+                    font-size: 1rem;
+                    font-family: 'Montserrat', 'Arial', sans-serif;
+                    font-weight: bold;
+                    color: rgb(255, 255, 255);
+
+                    &:hover {
+                        transition: all 0.2s;
+                        color: #bc3c3b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menuHamburguer {
+    background-color: rgba(0, 0, 0, 0.61);
+
+    padding: 10px 0 30px 0;
+
+    .verticalMenu {
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        li {
+            cursor: pointer;
+            list-style: none;
+            color: #bc3c3b;
+
+            span {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-weight: 400;
+                letter-spacing: 0.10rem;
+                font-size: 1.25em;
+
+                &:hover {
+                    transition: all 0.2s;
+                    color: #bc3c3b;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    color: #bc3c3b !important;
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'AppleGaramondItalic';
+    src: url('../../assets/fonts/AppleGaramond-Italic.ttf');
+}
+
+.cardapioBannerDiv {
+    height: calc(60vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+
+        font-size: 2.5em;
+        font-family: 'Libre Baskerville', 'dayrom', serif;
+        font-weight: 100;
+
+        color: white;
+    }
+}

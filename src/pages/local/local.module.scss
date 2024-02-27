@@ -1,0 +1,41 @@
+.localBannerSection {
+    height: 100%;
+    
+    border-bottom: 0.60vh solid #bc3c3b;
+
+    background-image: url('../../assets/images/headerLocal.jpg');
+    background-position: 100% 20%;
+
+    background-size: cover;
+}
+
+.localContentSection {
+    height: 100vh;
+
+    background-color: #f4f1f1;
+    border-bottom: 0.60vh solid #bc3c3b;
+}
+
+.horarioFuncionamentoSection {
+    height: 100vh;
+
+    background-image: url('../../assets/images/fornoALenhaImg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0.60vh solid #bc3c3b;
+}
+
+@media (max-width: 1024px) {
+.localContentSection { 
+    height: 100%;
+}
+
+.horarioFuncionamentoSection {
+    height: 100%;
+}
+}

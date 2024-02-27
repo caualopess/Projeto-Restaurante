@@ -1,0 +1,25 @@
+#tourBannerSection {
+    height: 100%;
+    background-image: url('../../assets/images/pizza-main.png');
+    background-position: center;
+    border-bottom: 0.60vh solid #bc3c3b;
+    
+}
+
+#tourContentSection {
+    height: 100vh;
+
+    background-color: #f6f1f1;
+}
+
+@media (max-width: 768px) {
+    #tourContentSection {
+        height: 100%;
+    }
+}
+
+@media (max-height: 960px){
+    #tourContentSection {
+        height: 100%;
+    }
+}

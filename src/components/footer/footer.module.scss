@@ -1,0 +1,233 @@
+footer {
+    display: flex;
+    height: 100%;
+    padding: 3.75vh 0;
+    justify-content: space-around;
+    background-color: hsla(0, 0%, 0%, 0.863);
+    font-family: 'Work Sans', 'Arial', sans-serif;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        gap: 20px;
+
+        height: 100%;
+        width: 300px;
+
+        font-size: 14px;
+
+        h2 {
+            color: #bc3c3b;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .nossosHorarios {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            gap: 25px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                color: white;
+
+                gap: 5px;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .faleConosco {
+            display: flex;
+            flex-direction: column;
+
+            gap: 25px;
+            color: white;
+
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                color: white;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+
+            gap: 25px;
+            color: white;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                gap: 10px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 500;
+
+                        font-size: 1em;
+
+                        &:hover {
+                            transition: all(0.2s);
+                            color: #bc3c3b;
+                        }
+                    }
+
+                    &:hover {
+                        transition: all 0.2s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                img {
+                    width: 100px;
+                    height: 100px;
+
+                    &:hover {
+                        transition: all 0.2s;
+                        filter: brightness(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    footer {
+        height: 32.5vh;
+
+        .column {
+            font-size: 12px;
+
+            img {
+                width: 175px;
+            }
+
+            .logos {
+                a {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        img {
+            width: 175px;
+        }
+
+        .column {
+            font-size: 14px;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+
+            .nossosHorarios {
+                width: 80%;
+
+                a {
+                    cursor: pointer;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    color: white;
+                    text-decoration: none;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    &:hover {
+                        transition: all(0.2s);
+                        color: #bc3c3b;
+                    }
+                }
+            }
+
+            .faleConosco {
+                width: 80%;
+
+                a {
+                    cursor: pointer;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    color: white;
+                    text-decoration: none;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    &:hover {
+                        transition: all(0.2s);
+                        color: #bc3c3b;
+                    }
+                }
+            }
+
+            .logos {
+                flex-direction: row;
+
+                a {
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+
+            }
+        }
+    }
+}

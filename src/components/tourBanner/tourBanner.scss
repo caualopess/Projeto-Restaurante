@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'AppleGaramondBold';
+    src: url('../../assets/fonts/AppleGaramond-Bold.ttf');
+}
+
+
+#tourBannerDiv {
+    height: calc(100% - 20vh);
+    padding: 10vh 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 100;
+        color: white;
+
+        font-family: 'Libre Baskerville', 'dayrom', serif;
+    }
+}

@@ -1,0 +1,77 @@
+.homeBannerSection {
+    height: 99.4vh;
+
+    border-bottom: 0.60vh solid #bc3c3b;
+
+    position: relative;
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        filter: brightness(50%);
+        right: 0;
+        bottom: 0;
+        z-index: -100;
+    }
+}
+
+.sobreContentSection {
+    height: 100%;
+
+    background-color: #F4F4EF;
+    background-image: url('../../assets/images/backgroundPattern.png');
+    background-size: cover;
+
+    border-bottom: 0.60vh solid #bc3c3b;
+    overflow-x: hidden;
+}
+
+.adegaContentSection {
+    height: 100%;
+    border-bottom: 0.60vh solid #bc3c3b;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('../../assets/images/wineHouse.jpg');
+
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.especialidadesDaCasaSection {
+    height: 100%;
+
+    background-color: #F4F4EF;
+    border-bottom: 0.60vh solid #bc3c3b;
+    background-image: url('../../assets/images/backgroundPattern.png');
+}
+
+.fornoLenhaSection {
+    height: 100%;
+
+    background-image: url('../../assets/images/fornoALenhaImg.jpg');
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 0.60vh solid #bc3c3b;
+}
+
+
+@media (max-width: 1210px) {
+    .homeBannerSection {
+        height: 100%;
+    }
+}
+
+@media (max-height: 960px) {
+    .homeBannerSection {
+        height: 100%;
+    }
+}
